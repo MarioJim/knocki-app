@@ -1,0 +1,26 @@
+@import '../../style/base/colors';
+
+.gesture {
+    border: 3px solid $border-color;
+    margin: 10px;
+    padding: 14px;
+    border-radius: 10px;
+    
+    a {
+        text-decoration: none;
+
+        h3 {
+            font-size: 16px;
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+            color: black;
+        }
+    
+        div {
+            height: 10vw;
+            margin-top: 2vw;
+    
+            svg { height: 10vw; }
+        }
+    }
+}

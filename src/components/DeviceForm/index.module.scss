@@ -1,0 +1,24 @@
+@import '../../style/base/colors';
+@import '../../style/components/forms';
+
+.gesture_toggles {
+    margin: 16px;
+    border: 3px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+
+    > p {
+        text-align: center;
+        color: grey;
+    }
+
+    > div {
+        display: grid;
+        grid-template-columns: auto 14vw;
+        padding: 10px;
+    }
+
+    h4 {
+        margin: auto 0;
+    }
+}

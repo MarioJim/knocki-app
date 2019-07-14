@@ -1,0 +1,46 @@
+@import '../../style/base/colors';
+
+.device {
+    border: 3px solid $border-color;
+    margin: 6px 10px;
+    padding: 14px;
+    border-radius: 10px;
+    display: inline-grid;
+    grid-column-gap: 16px;
+    grid-template-columns: 20vw auto 50px;
+
+    svg {
+        width: 20vw;
+        max-width: 120px;
+        transition: 200ms filter linear;
+
+        &.off { filter: brightness(40%); }
+    }
+
+    > a {
+        margin: auto 0;
+        width: calc(100vw - 20vw - 180px);
+        padding: 10px 0;
+        text-decoration: none;
+    }
+
+    > div {
+        margin: auto 0;
+    }
+
+    h5 {
+        font-family: 'Raleway', sans-serif;
+        color: black;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    span {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+
+        &.on { color: green; }
+        &.off { color: red; }
+    }
+}

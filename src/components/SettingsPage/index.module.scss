@@ -1,0 +1,15 @@
+@import '../../style/base/colors';
+@import '../../style/components/page_layout';
+
+.settings_row {
+    border-bottom: 1px solid $border-color;
+    padding: 14px;
+    display: grid;
+    grid-template-columns: auto 14vw;
+    grid-column-gap: 20px;
+
+    p {
+        margin: auto 0;
+        font-size: 18px;
+    }
+}

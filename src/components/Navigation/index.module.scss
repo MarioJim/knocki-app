@@ -1,0 +1,29 @@
+@import '../../style/base/colors';
+
+nav {
+    position: fixed;
+    height: 6vh;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    background: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid grey;
+    align-items: center;
+
+    a {
+        height: 100%;
+
+        svg {
+            width: 5vh;
+            margin: 0.5vh 0;
+    
+            path { fill: #CCC; }
+        }
+
+        &.active path { fill: $accent-color; }
+    }
+}

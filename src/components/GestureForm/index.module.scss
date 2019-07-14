@@ -1,0 +1,53 @@
+@import '../../style/base/colors';
+@import '../../style/components/forms';
+
+.icon_and_select {
+    @extend %icon_and_input;
+
+    img {
+        margin: 3vw;
+        width: 14vw;
+        height: 14vw;
+        background-size: contain;
+        border-radius: 6px;
+    }
+    
+    select {
+        margin: auto 0;
+        height: 44px;
+        width: 90%;
+        background-color: white;
+        font-size: 20px;
+        border: 4px solid $accent-color;
+        padding: 5px;
+        border-radius: 10px;
+        align-self: center;
+    }
+}
+
+.enter_pattern {
+    height: 9vw;
+    margin: 10px;
+    padding: 1vw;
+    border: 3px solid $border-color;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto 10vw;
+
+    svg {
+        height: 9vw;
+    }
+
+    div:first-of-type {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.tapping_area {
+    background: lightgray;
+    margin: 10px;
+    height: 20vh;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
