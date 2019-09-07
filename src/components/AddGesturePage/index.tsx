@@ -1,14 +1,13 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { RouteChildrenProps } from 'react-router';
 import { Dispatch } from 'redux';
 
-
 import GestureForm, { onSubmitGestureInterface } from '../GestureForm';
-import styles from './index.module.scss';
-import { RouteChildrenProps } from 'react-router';
+import { AppState } from '../../store';
 import { addGesture } from '../../store/gestures/actions';
 import { Gesture } from '../../store/gestures/types';
-import { connect } from 'react-redux';
-import { AppState } from '../../store';
+import styles from './index.module.scss';
 
 interface DispatchProps {
   onSubmit: onSubmitGestureInterface
