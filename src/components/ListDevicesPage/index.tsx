@@ -22,7 +22,7 @@ type Props = StateProps & DispatchProps;
 
 const ListDevicesPage: React.FC<Props> = ({ devices, toggleDevice }) => (
   <div className={styles.list_page}>
-    { devices.length === 0 ? (
+    {devices.length === 0 ? (
       <div className={styles.empty_page}>
         <p>You don't have any devices</p>
         <p>Add one to start</p>
@@ -33,7 +33,7 @@ const ListDevicesPage: React.FC<Props> = ({ devices, toggleDevice }) => (
         toggleDevice={toggleDevice}
         key={device.id}
       />
-    )) }
+    ))}
     <Link to="/addDevice" className={styles.addBtn} >
       <AddBtn />
     </Link>

@@ -13,7 +13,7 @@ interface DispatchProps {
   onSubmit: onSubmitGestureInterface
 }
 
-interface OwnProps extends RouteChildrenProps {}
+interface OwnProps extends RouteChildrenProps { }
 
 type Props = DispatchProps & OwnProps;
 

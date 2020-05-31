@@ -15,10 +15,10 @@ const GestureListing: React.FC<Props> = ({ gesture }) => (
     <Link to={`/editGesture/${gesture.id}`}>
       <h3>{gesture.name}</h3>
       <div>
-        { gesture.pattern.map((tap, index) =>
+        {gesture.pattern.map((tap, index) =>
           tap ?
             <FullSvg key={index} /> :
-            <EmptySvg key={index} />) }
+            <EmptySvg key={index} />)}
       </div>
     </Link>
   </div>

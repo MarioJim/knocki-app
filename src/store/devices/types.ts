@@ -4,7 +4,9 @@ export interface Device {
   room: string
   surface: string
   isOn: boolean
-  gestureToggles: { [key:string]: boolean }
+  gestureToggles: {
+    [key: string]: boolean
+  }
   id: string
 }
 
@@ -40,4 +42,10 @@ interface ToggleGestureAction {
   gestureID: string
 }
 
-export type DeviceActionTypes = AddDeviceAction | EditDeviceAction | RemoveDeviceAction | ToggleDeviceAction | AddGestureAction | RemoveGestureAction | ToggleGestureAction;
+export type DeviceActionTypes = AddDeviceAction |
+  EditDeviceAction |
+  RemoveDeviceAction |
+  ToggleDeviceAction |
+  AddGestureAction |
+  RemoveGestureAction |
+  ToggleGestureAction;

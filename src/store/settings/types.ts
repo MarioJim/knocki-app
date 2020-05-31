@@ -1,4 +1,5 @@
-export type SettingTypes = 'sendAnalytics' | 'sendInteractions' | 'allowLocation' | 'allowNotifications';
+export type SettingTypes = 'sendAnalytics' | 'sendInteractions' | 'allowLocation' |
+  'allowNotifications';
 
 export interface Settings {
   sendAnalytics: boolean

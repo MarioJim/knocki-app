@@ -42,7 +42,7 @@ interface StateProps {
 interface OwnProps {
   onSubmit: onSubmitGestureInterface
   history: History
-  editingGesture?: Gesture 
+  editingGesture?: Gesture
 }
 
 type Props = StateProps & OwnProps;
@@ -154,7 +154,7 @@ class GestureForm extends React.PureComponent<Props, State> {
       <React.Fragment>
         <form onSubmit={this.onSubmit} onReset={this.onReset}>
           <h3 className={styles.subtitle}>Configure a gesture</h3>
-          { error && <p className={styles.error}>{error}</p> }
+          {error && <p className={styles.error}>{error}</p>}
           <div className={styles.icon_and_text}>
             <div>
               <TagSvg />
@@ -171,18 +171,16 @@ class GestureForm extends React.PureComponent<Props, State> {
           <div className={styles.icon_and_select}>
             <img src={`/img/app_icons/${gesture.app}.png`} alt="App icon" />
             <select onChange={this.onAppChange}>
-              { Object.entries(selectLookupMap).map(([ value, label ]) => (
+              {Object.entries(selectLookupMap).map(([value, label]) => (
                 <option value={value} key={value}>{label}</option>
-              )) }
+              ))}
             </select>
           </div>
           <h3 className={styles.subtitle}>Your pattern</h3>
           <div className={styles.enter_pattern}>
             <div>
-              { gesture.pattern.map((tap, index) =>
-                tap ?
-                  <FullSvg key={index} /> :
-                  <EmptySvg key={index} />) }
+              {gesture.pattern.map((tap, index) =>
+                tap ? <FullSvg key={index} /> : <EmptySvg key={index} />)}
             </div>
             <div onClick={this.onPressBackspace}>
               <BackspaceBtn />

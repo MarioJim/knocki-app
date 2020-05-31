@@ -16,14 +16,14 @@ type Props = StateProps;
 
 const ListGesturesPage: React.FC<Props> = ({ gestures }) => (
   <div className={styles.list_page}>
-    { gestures.length === 0 ? (
+    {gestures.length === 0 ? (
       <div className={styles.empty_page}>
         <p>You don't have any gestures</p>
         <p>Add one to start</p>
       </div>
     ) : gestures.map(gesture => (
       <GestureListing gesture={gesture} key={gesture.id} />
-    )) }
+    ))}
     <Link to="/addGesture" className={styles.addBtn} >
       <AddBtn />
     </Link>

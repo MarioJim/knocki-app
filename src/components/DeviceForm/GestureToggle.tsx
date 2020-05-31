@@ -19,7 +19,7 @@ const GestureToggle: React.FC<Props> = (props: Props) => {
   return (
     <div>
       <h4>{gesture.name}</h4>
-      <Toggle 
+      <Toggle
         defaultChecked={isOn}
         icons={false}
         onChange={() => { onToggle(gesture.id); }}

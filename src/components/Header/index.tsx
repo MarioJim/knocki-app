@@ -4,7 +4,7 @@ import { withRouter, RouteComponentProps } from 'react-router';
 import { ReactComponent as AvatarImg } from './avatar.svg';
 import styles from './index.module.scss';
 
-interface Props  extends RouteComponentProps {
+interface Props extends RouteComponentProps {
   title?: string
 }
 

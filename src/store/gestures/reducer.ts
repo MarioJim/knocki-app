@@ -14,7 +14,7 @@ export default (
 ): Gesture[] => {
   switch (action.type) {
     case ADD_GESTURE:
-      return [ ...state, action.gesture ];
+      return [...state, action.gesture];
     case EDIT_GESTURE:
       return state.map(gesture =>
         (gesture.id === action.id) ? { ...gesture, ...action.updatedGesture } : gesture

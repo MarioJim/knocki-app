@@ -13,7 +13,7 @@ interface MatchParams {
   id: string
 }
 
-interface OwnProps extends RouteComponentProps<MatchParams> {}
+interface OwnProps extends RouteComponentProps<MatchParams> { }
 
 interface StateProps {
   editingDevice: Device | undefined
@@ -34,11 +34,11 @@ const EditDevicePage: React.FC<Props> = ({ onSubmit, history, editingDevice }) =
         editingDevice={editingDevice}
       />
     ) : (
-      <div>
-        <h2>Error</h2>
-        <h4>Device not found</h4>
-      </div>
-    )}
+        <div>
+          <h2>Error</h2>
+          <h4>Device not found</h4>
+        </div>
+      )}
   </div>
 );
 

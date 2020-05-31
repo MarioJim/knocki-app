@@ -16,16 +16,16 @@ export default (
 ): Device[] => {
   switch (action.type) {
     case ADD_DEVICE:
-      return [ ...state, action.device ];
+      return [...state, action.device];
     case EDIT_DEVICE:
-      return state.map(device => 
+      return state.map(device =>
         (device.id === action.id) ? { ...device, ...action.updatedDevice } : device
       );
     case REMOVE_DEVICE:
       return state.filter(({ id }) => id !== action.id);
     case TOGGLE_DEVICE:
-      return state.map(device => 
-          (device.id === action.id) ? { ...device, isOn: !device.isOn } : device
+      return state.map(device =>
+        (device.id === action.id) ? { ...device, isOn: !device.isOn } : device
       );
     case ADD_GESTURE:
       return state.map(device => {

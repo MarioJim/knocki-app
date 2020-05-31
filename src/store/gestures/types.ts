@@ -1,4 +1,5 @@
-export type AppTypes = 'facebook' | 'gmail' | 'harmony' | 'hue' | 'ifttt' | 'lifx' | 'nest' | 'smartthings' | 'sms' | 'sonos' | 'tplink' | 'twitter' | 'wemo';
+export type AppTypes = 'facebook' | 'gmail' | 'harmony' | 'hue' | 'ifttt' | 'lifx' | 'nest' |
+  'smartthings' | 'sms' | 'sonos' | 'tplink' | 'twitter' | 'wemo';
 
 export interface Gesture {
   name: string

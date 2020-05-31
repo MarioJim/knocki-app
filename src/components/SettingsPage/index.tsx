@@ -8,13 +8,13 @@ import { toggleSetting } from '../../store/settings/actions';
 import { SettingTypes, Settings } from '../../store/settings/types';
 import styles from './index.module.scss';
 
-type SettingsLookupMapType = [ SettingTypes, string ];
+type SettingsLookupMapType = [SettingTypes, string];
 
 const settingsLookupMap: SettingsLookupMapType[] = [
-  [ 'sendAnalytics', 'Send technical data to our servers' ],
-  [ 'sendInteractions', 'Send interaction data to our servers' ],
-  [ 'allowLocation', 'Allow use of your location' ],
-  [ 'allowNotifications', 'Allow notifications' ],
+  ['sendAnalytics', 'Send technical data to our servers'],
+  ['sendInteractions', 'Send interaction data to our servers'],
+  ['allowLocation', 'Allow use of your location'],
+  ['allowNotifications', 'Allow notifications'],
 ];
 
 interface StateProps {
@@ -30,13 +30,13 @@ type Props = StateProps & DispatchProps;
 const SettingsPage: React.FC<Props> = (props) => (
   <div className={styles.page}>
     <div>
-      {settingsLookupMap.map(([ settingName, settingText ]) => (
+      {settingsLookupMap.map(([settingName, settingText]) => (
         <div key={settingName} className={styles.settings_row}>
           <p>{settingText}</p>
-          <Toggle 
+          <Toggle
             defaultChecked={props.settings[settingName]}
             icons={false}
-            onChange={() => { props.toggleSetting(settingName); }}
+            onChange={() => props.toggleSetting(settingName)}
           />
         </div>
       ))}

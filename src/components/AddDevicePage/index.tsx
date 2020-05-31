@@ -13,13 +13,13 @@ interface DispatchProps {
   onSubmit: onSubmitDeviceInterface
 }
 
-interface OwnProps extends RouteComponentProps {}
+interface OwnProps extends RouteComponentProps { }
 
 type Props = DispatchProps & OwnProps;
 
 const AddDevicePage: React.FC<Props> = ({ onSubmit, history }) => (
   <div className={styles.page}>
-    <DeviceForm 
+    <DeviceForm
       onSubmit={onSubmit}
       history={history}
     />

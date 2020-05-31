@@ -23,11 +23,11 @@ const DeviceListing: React.FC<Props> = ({ device, toggleDevice }) => (
       <h5>{device.room}</h5>
       <h5>{device.surface}</h5>
       <span>Status: </span>
-      { device.isOn ?
+      {device.isOn ?
         <span className={styles.on}>Online</span> :
-        <span className={styles.off}>Offline</span> }
+        <span className={styles.off}>Offline</span>}
     </Link>
-    <Toggle 
+    <Toggle
       defaultChecked={device.isOn}
       icons={false}
       onChange={() => { toggleDevice(device.id); }}

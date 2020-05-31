@@ -13,7 +13,7 @@ interface MatchParams {
   id: string
 }
 
-interface OwnProps extends RouteComponentProps<MatchParams> {}
+interface OwnProps extends RouteComponentProps<MatchParams> { }
 
 interface StateProps {
   editingGesture: Gesture | undefined
@@ -28,17 +28,17 @@ type Props = OwnProps & StateProps & DispatchProps;
 const EditGesturePage: React.FC<Props> = ({ onSubmit, history, editingGesture }) => (
   <div className={styles.page}>
     {editingGesture ? (
-      <GestureForm 
+      <GestureForm
         onSubmit={onSubmit}
         history={history}
         editingGesture={editingGesture}
       />
     ) : (
-      <div>
-        <h2>Error</h2>
-        <h4>Gesture not found</h4>
-      </div>
-    )}
+        <div>
+          <h2>Error</h2>
+          <h4>Gesture not found</h4>
+        </div>
+      )}
   </div>
 );
 
