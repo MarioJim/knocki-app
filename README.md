@@ -1,6 +1,8 @@
 # knocki-app
 Port of my Design Fundament's final project to React + Typescript
 
+It can be found on [GitHub Pages](https://mariojim.github.io/knocki-app/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Scripts

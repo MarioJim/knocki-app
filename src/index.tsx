@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 import 'normalize.css/normalize.css';
 
 import {
@@ -22,7 +22,7 @@ const store = configureStore();
 
 const App: React.FC = () => (
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Switch>
         <Redirect exact from="/" to="/devices" />
@@ -36,7 +36,7 @@ const App: React.FC = () => (
         <Route component={NotFoundPage} />
       </Switch>
       <Navigation />
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 );
 
