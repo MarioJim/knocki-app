@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a610b2a5e5836169287c99309e1408a",
+    "revision": "2f549f332d9e10035f542b6a0f4503ba",
     "url": "/knocki-app/index.html"
   },
   {
-    "revision": "9d77dd4c355a789312e6",
+    "revision": "eaad8cd5f1e386d405b6",
     "url": "/knocki-app/static/css/2.43a1393a.chunk.css"
   },
   {
-    "revision": "c90ac4b46e6c2b944026",
+    "revision": "4abad53b776846ab3f4f",
     "url": "/knocki-app/static/css/main.c8164d45.chunk.css"
   },
   {
-    "revision": "9d77dd4c355a789312e6",
-    "url": "/knocki-app/static/js/2.f268c8de.chunk.js"
+    "revision": "eaad8cd5f1e386d405b6",
+    "url": "/knocki-app/static/js/2.414d4c61.chunk.js"
   },
   {
-    "revision": "c90ac4b46e6c2b944026",
-    "url": "/knocki-app/static/js/main.3566a5a4.chunk.js"
+    "revision": "4abad53b776846ab3f4f",
+    "url": "/knocki-app/static/js/main.b80c4c1c.chunk.js"
   },
   {
     "revision": "22f31a2cab1a5b6cf7db",

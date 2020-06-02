@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/knocki-app/precache-manifest.188849df223593daf4c18cad4c527e3f.js"
+  "/knocki-app/precache-manifest.6cead84777a2d8067e67afe6dc976b0a.js"
 );
 
 self.addEventListener('message', (event) => {
