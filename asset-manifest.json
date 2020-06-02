@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/knocki-app/static/css/main.c8164d45.chunk.css",
+    "main.js": "/knocki-app/static/js/main.3566a5a4.chunk.js",
+    "main.js.map": "/knocki-app/static/js/main.3566a5a4.chunk.js.map",
+    "runtime~main.js": "/knocki-app/static/js/runtime~main.f97e9a91.js",
+    "runtime~main.js.map": "/knocki-app/static/js/runtime~main.f97e9a91.js.map",
+    "static/css/2.43a1393a.chunk.css": "/knocki-app/static/css/2.43a1393a.chunk.css",
+    "static/js/2.f268c8de.chunk.js": "/knocki-app/static/js/2.f268c8de.chunk.js",
+    "static/js/2.f268c8de.chunk.js.map": "/knocki-app/static/js/2.f268c8de.chunk.js.map",
+    "index.html": "/knocki-app/index.html",
+    "precache-manifest.188849df223593daf4c18cad4c527e3f.js": "/knocki-app/precache-manifest.188849df223593daf4c18cad4c527e3f.js",
+    "service-worker.js": "/knocki-app/service-worker.js",
+    "static/css/2.43a1393a.chunk.css.map": "/knocki-app/static/css/2.43a1393a.chunk.css.map",
+    "static/css/main.c8164d45.chunk.css.map": "/knocki-app/static/css/main.c8164d45.chunk.css.map",
+    "static/media/add.62398b3a.svg": "/knocki-app/static/media/add.62398b3a.svg",
+    "static/media/avatar.296a4b81.svg": "/knocki-app/static/media/avatar.296a4b81.svg",
+    "static/media/backspace-arrow.8d60ec65.svg": "/knocki-app/static/media/backspace-arrow.8d60ec65.svg",
+    "static/media/devices.ad614847.svg": "/knocki-app/static/media/devices.ad614847.svg",
+    "static/media/empty.04e7318d.svg": "/knocki-app/static/media/empty.04e7318d.svg",
+    "static/media/full.e8d47ac5.svg": "/knocki-app/static/media/full.e8d47ac5.svg",
+    "static/media/gestures.4ae136b3.svg": "/knocki-app/static/media/gestures.4ae136b3.svg",
+    "static/media/location.edb3a3d3.svg": "/knocki-app/static/media/location.edb3a3d3.svg",
+    "static/media/logo.b8be9a60.svg": "/knocki-app/static/media/logo.b8be9a60.svg",
+    "static/media/settings.9a94afce.svg": "/knocki-app/static/media/settings.9a94afce.svg",
+    "static/media/surface.6698c65a.svg": "/knocki-app/static/media/surface.6698c65a.svg",
+    "static/media/tag.aeb2172c.svg": "/knocki-app/static/media/tag.aeb2172c.svg"
+  }
+}
